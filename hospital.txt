@@ -1,0 +1,31 @@
+Object-Oriented Concepts in Hospital Management System
+This Hospital Management System (HMS) can be designed using Object-Oriented Programming (OOP) principles such as Inheritance, Encapsulation, Polymorphism, Abstraction, Composition, and Aggregation.
+
+1. Inheritance (IS-A Relationship)
+Inheritance allows classes to share common attributes and behaviors while specializing in their roles.
+
+Base Class: Person
+Common attributes: name, age, gender, contact_info
+Derived Classes:
+Patient (inherits Person) → Additional attributes: medical_history, appointments
+Employee (inherits Person) → Additional attributes: employee_id, department
+Doctor (inherits Employee) → Additional attributes: specialization, schedule, patients
+Nurse (inherits Employee) → Additional attributes: assigned_wards, patients
+
+2. Encapsulation (Data Hiding & Access Control)
+Encapsulation protects sensitive patient and hospital data by restricting direct access.
+
+Example:
+Patient medical records should not be accessed directly.
+Private attributes: _medical_records, _billing_info
+Use getter/setter methods to access/update them securely.
+
+3. Polymorphism (Different Implementations of a Common Method)
+Different roles (doctor, nurse, administrator) can have different implementations of a shared method.
+
+Example: schedule_duty() method behaves differently for different employees.
+
+4. Abstraction (Hiding Implementation Details)
+Abstract classes define a blueprint for entities without exposing implementation details.
+
+Example: HospitalResource is an abstract class
